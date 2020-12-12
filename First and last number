@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void) 
+{
+    int N,T,r1,r2,sum=0,r;
+    scanf("%d",&T);
+    while(T--)
+    {
+        scanf("%d",&N);
+        r1=N%10;
+        sum=0;
+        while(N>0)
+        {
+            r=N%10;
+            sum=sum*10+r;
+            N=N/10;
+        }
+        r2=sum%10;
+        printf("%d\n",r1+r2);
+    }
+	// your code goes here
+	return 0;
+}
