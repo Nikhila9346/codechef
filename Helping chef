@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void) {
+    int N,T;
+    scanf("%d",&T);
+    while(T--)
+    {
+        scanf("%d",&N);
+        if(N<10)
+        printf("Thanks for helping Chef!");
+        else
+        printf("-1");
+        printf("\n");
+    }
+	// your code goes here
+	return 0;
+}
